@@ -1952,5 +1952,6 @@ function loadDemo(){
   state.deliveries.unshift({ id:uid(), projectId:pid, supplier:"PlaceMakers", date:new Date().toISOString().slice(0,10), status:"Expected", items:"Timber pack + fixings", dropPoint:"Driveway", notes:"Call ahead", photos:[], createdAt:new Date().toISOString(), updatedAt:new Date().toISOString() });
   state.inspections.unshift({ id:uid(), projectId:pid, type:"Pre-line", date:new Date(Date.now()+2*86400000).toISOString().slice(0,10), result:"Booked", inspector:"", notes:"Ensure smoke alarms locations confirmed", photos:[], createdAt:new Date().toISOString(), updatedAt:new Date().toISOString() });
   saveState(state);
+   
   render();
 }
