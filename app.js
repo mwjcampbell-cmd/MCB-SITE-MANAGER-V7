@@ -2,6 +2,9 @@
    Modules: Projects, Tasks, Diary, Variations, Subbies, Deliveries, Inspections, Reports, Settings
    Root logo: ./logo.png (used in header + reports)
 */
+// ===== Google Sheets Sync =====
+const SYNC_URL = "https://script.google.com/macros/s/AKfycbxv124HyhBW30KW9lCkrj1zs6O2v-o-vx-vX7mkuzmIfP-ZkakalSRXrfTNOXvteMlhxQ/exec";
+const SYNC_KEY = "IsabellaHopeCampbell";
 const $ = (sel, root=document) => root.querySelector(sel);
 const $$ = (sel, root=document) => [...root.querySelectorAll(sel)];
 const uid = () => Math.random().toString(16).slice(2) + Date.now().toString(16);
